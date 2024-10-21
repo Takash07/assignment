@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facilities - Department of Management</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Montserrat:700&display=swap">
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f4f7fa;
+      color: #333;
+    }
+
+/*------------------------------*/
+/* Main Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Header */
+.container {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* Header */
+        header {
+            background-color: #1e3a8a; /* Dark blue */
+            color: white;
+            padding: 30px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Logo */
+        header .logo img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%; /* Make logo round */
+            object-fit: cover;
+            border: 4px solid #ffffff;
+        }
+
+        /* Header Text */
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5em;
+            margin: 20px 0;
+            color: #fff;
+        }
+
+        header .tagline {
+            font-size: 1.5em;
+            margin-top: 10px;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+            animation-delay: 1s;
+        }
+
+        /* Animation for header text */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #3b82f6; /* Lighter blue */
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #e0f2fe; /* Very light blue */
+        }
+
+        /* Main Section */
+        main {
+            padding: 50px 20px;
+            background-color: #f0f9ff; /* Light background */
+        }
+
+        main h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: #1e3a8a;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+
+/*------------------------------------*/
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      height: 180px;
+    }
+
+    /* Title Section */
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5em;
+      text-align: center;
+      margin-top: 50px;
+      color: #1e3a8a;
+    }
+
+    /* Sidebar Styles */
+    .sidebar {
+      float: left;
+      width: 25%;
+      background-color: #f8fafc;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      padding: 10px 0;
+    }
+
+    .sidebar ul li a {
+      text-decoration: none;
+      font-size: 1.1em;
+      color: #1e3a8a;
+      display: block;
+      padding: 10px;
+      border-left: 3px solid transparent;
+      transition: 0.3s;
+    }
+
+    .sidebar ul li a:hover, 
+    .sidebar ul li.active a {
+      background-color: #e0f2fe;
+      border-left: 3px solid #3b82f6;
+    }
+
+    /* Facilities Cards */
+    .facilities {
+      margin-left: 30%;
+      margin-top: 20px;
+    }
+
+    .facility-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .facility-card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    .facility-card h3 {
+      font-family: 'Montserrat', sans-serif;
+      color: #1e3a8a;
+      margin-bottom: 10px;
+    }
+
+    .facility-card p {
+      margin: 0;
+    }
+
+    .facility-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .icon-list {
+      margin-top: 20px;
+    }
+
+    .icon-list a {
+      margin-right: 15px;
+      font-size: 1.5em;
+      color: #3b82f6;
+      text-decoration: none;
+    }
+/* Footer */
+footer {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9em;
+    }
+
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .facilities {
+        margin-left: 0;
+      }
+
+      .sidebar {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+      }
+
+      .facility-card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .facility-card img {
+        margin-bottom: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+  <div class="container">
+      <div class="logo">
+          <img src="https://rgu.ac.in/wp-content/uploads/2020/11/Rajiv_Gandhi_University_Logo.jpg" alt="Rajiv Gandhi University Logo">
+      </div>
+      <h1>Rajiv Gandhi University</h1>
+      <p class="tagline">Education for Empowerment</p>
+  </div>
+</header>
+
+<!-- Navigation Section -->
+<nav>
+  <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="try.html">About Us</a></li>
+      <li><a href="#">Departments</a></li>
+      <li><a href="courses.html">Admissions</a></li>
+      <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Main Content -->
+<main> 
+  <center>
+    <h2>Welcome to Rajiv Gandhi University</h2>
+    <p>Rajiv Gandhi University, established in 1984, is a premier educational institution in India.</p>
+</center>
+
+</main>
+
+
+
+
+  <!-- Sidebar Section -->
+  <div class="container">
+    <div class="sidebar">
+      <ul>
+        <li><a href="#">About Department</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="faculty_member.html">Faculty Members</a></li>
+        <li><a href="#">Staff</a></li>
+        <li><a href="#">Events</a></li>
+        <li class="active"><a href="#">Facilities</a></li>
+      </ul>
+    </div>
+
+    <!-- Facilities Section -->
+    <div class="facilities">
+      <center><h1>Department of Management</h1></center>
+
+      <div class="facility-card">
+        <img src="https://via.placeholder.com/80" alt="Library">
+        <div>
+          <h3>Library</h3>
+          <p>A modern library with a vast collection of academic resources and quiet study areas.</p>
+          <div class="icon-list">
+            <a href="#"><i class="fas fa-phone"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="facility-card">
+        <img src="https://via.placeholder.com/80" alt="Cafeteria">
+        <div>
+          <h3>Cafeteria</h3>
+          <p>A clean and comfortable space serving healthy meals and snacks to students and faculty.</p>
+          <div class="icon-list">
+            <a href="#"><i class="fas fa-phone"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="facility-card">
+        <img src="https://via.placeholder.com/80" alt="Sports Complex">
+        <div>
+          <h3>Sports Complex</h3>
+          <p>State-of-the-art sports facilities including a gym, courts, and fields for various sports.</p>
+          <div class="icon-list">
+            <a href="#"><i class="fas fa-phone"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+ <!-- Footer Section -->
+  <footer>
+    <p style="margin-top: 20px;">© 2024 Rajiv Gandhi University. All rights reserved.</p>
+        <p style="color: white; margin-top: 10px;">Developed with ❤️ Nanu Kena</p>
+  </footer>   
+
+  </div>
+  
+
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</body>
+</html>

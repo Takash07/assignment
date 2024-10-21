@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Management Department Courses - Admission</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f5f8fb;
+      color: #333;
+    }
+
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+
+    /* Title Section */
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5em;
+      text-align: center;
+      margin: 30px 0;
+      color: #1e40af; /* Blue */
+    }
+
+    /* Courses Section */
+    .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    /* Course Card */
+    .course-card {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: left;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+      position: relative;
+      min-height: 250px;
+    }
+
+    .course-card h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.5em;
+      color: #1e3a8a;
+      margin-bottom: 10px;
+    }
+
+    .course-card p {
+      font-size: 0.9em;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .course-card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .course-card ul li {
+      padding: 5px 0;
+      color: #6b7280;
+    }
+
+    .course-card ul li span {
+      font-weight: 700;
+      color: #333;
+    }
+
+    .course-card .apply-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #1e40af;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .course-card .apply-btn:hover {
+      background-color: #3b82f6;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+      .courses-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .courses-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+/* Footer */
+footer {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9em;
+    }
+
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Our Courses</h1>
+
+    <div class="courses-grid">
+      <!-- MBA Course -->
+      <div class="course-card">
+        <h3>MBA (Master of Business Administration)</h3>
+        <p>Our MBA program equips students with modern management techniques and leadership skills to excel in various sectors.</p>
+        <ul>
+          <li><span>Duration:</span> 2 Years</li>
+          <li><span>Eligibility:</span> Graduation in any discipline</li>
+          <li><span>Mode:</span> Full-time</li>
+        </ul>
+        <a href="#" class="apply-btn">Apply Now</a>
+      </div>
+
+      <!-- Post Diploma in Tourism Management -->
+      <div class="course-card">
+        <h3>Post Diploma in Tourism Management</h3>
+        <p>This course provides in-depth knowledge in tourism operations, guiding students toward a successful career in the tourism industry.</p>
+        <ul>
+          <li><span>Duration:</span> 1 Year</li>
+          <li><span>Eligibility:</span> Diploma or equivalent</li>
+          <li><span>Mode:</span> Full-time/Part-time</li>
+        </ul>
+        <a href="#" class="apply-btn">Apply Now</a>
+      </div>
+
+      <!-- BBA Course -->
+      <div class="course-card">
+        <h3>BBA (Bachelor of Business Administration)</h3>
+        <p>The BBA program offers a solid foundation in business studies, opening doors to leadership roles and advanced studies like MBA.</p>
+        <ul>
+          <li><span>Duration:</span> 3 Years</li>
+          <li><span>Eligibility:</span> 10+2 in any stream</li>
+          <li><span>Mode:</span> Full-time</li>
+        </ul>
+        <a href="#" class="apply-btn">Apply Now</a>
+      </div>
+
+      <!-- PGDM (Post Graduate Diploma in Management) -->
+      <div class="course-card">
+        <h3>PGDM (Post Graduate Diploma in Management)</h3>
+        <p>Designed for future business leaders, the PGDM program focuses on strategic management, leadership, and innovation in business.</p>
+        <ul>
+          <li><span>Duration:</span> 2 Years</li>
+          <li><span>Eligibility:</span> Graduation in any discipline</li>
+          <li><span>Mode:</span> Full-time</li>
+        </ul>
+        <a href="#" class="apply-btn">Apply Now</a>
+      </div>
+
+      <!-- Executive MBA -->
+      <div class="course-card">
+        <h3>Executive MBA</h3>
+        <p>Tailored for working professionals, the Executive MBA helps enhance leadership and management skills without career interruption.</p>
+        <ul>
+          <li><span>Duration:</span> 1 Year</li>
+          <li><span>Eligibility:</span> Minimum 3 years of work experience</li>
+          <li><span>Mode:</span> Part-time/Online</li>
+        </ul>
+        <a href="#" class="apply-btn">Apply Now</a>
+      </div>
+
+      <!-- Certificate in Digital Marketing -->
+      <div class="course-card">
+        <h3>Certificate in Digital Marketing</h3>
+        <p>This short-term course offers practical knowledge and hands-on experience in digital marketing techniques and strategies.</p>
+        <ul>
+          <li><span>Duration:</span> 6 Months</li>
+          <li><span>Eligibility:</span> 10+2 or equivalent</li>
+          <li><span>Mode:</span> Part-time</li>
+        </ul>
+        <a href="#" class="apply-btn">Apply Now</a>
+      </div>
+
+      <!-- Add more courses below -->
+    </div>
+     <!-- Footer Section -->
+  <footer>
+    <p style="margin-top: 20px;">© 2024 Rajiv Gandhi University. All rights reserved.</p>
+        <p style="color: white; margin-top: 10px;">Developed with ❤️ Nanu Kena</p>
+  </footer>
+  </div>
+
+</body>
+</html>

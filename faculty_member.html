@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faculty Members - Department of Management</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Montserrat:700&display=swap">
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+
+    /* Title Section */
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5em;
+      text-align: center;
+      margin: 30px 0;
+      color: #1e40af; /* Blue */
+    }
+
+    /* Faculty Member Grid */
+    .faculty-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    /* Faculty Member Card */
+    .faculty-card {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .faculty-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background-color: #1e40af; /* Blue */
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+
+    .faculty-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .faculty-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .faculty-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .faculty-card:hover img {
+      transform: rotate(360deg);
+    }
+
+    .faculty-card h3 {
+      font-family: 'Montserrat', sans-serif;
+      color: #1e3a8a;
+      font-size: 1.3em;
+      margin: 10px 0;
+    }
+
+    .faculty-card h4 {
+      font-weight: normal;
+      color: #6b7280;
+      margin-bottom: 10px;
+    }
+
+    .faculty-card p {
+      font-size: 0.9em;
+      color: #6b7280;
+    }
+
+    /* Icon List */
+    .icon-list {
+      margin-top: 15px;
+    }
+
+    .icon-list a {
+      margin: 0 10px;
+      font-size: 1.3em;
+      color: #1e3a8a;
+      text-decoration: none;
+    }
+
+    .icon-list a:hover {
+      color: #3b82f6;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+      .faculty-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .faculty-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9em;
+    }
+
+/* Footer */
+footer {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9em;
+    }
+
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Faculty Members</h1>
+
+    <div class="faculty-grid">
+      <div class="faculty-card">
+        <img src="R-Tamuli.jpg" alt="Prof. Ranjit Tamuli">
+        <h3>Prof. Ranjit Tamuli</h3>
+        <h4>Professor</h4>
+        <p>Specialization: Accounting, Finance</p>
+        <div class="icon-list">
+          <a href="#"><i class="fas fa-phone"></i></a>
+          <a href="#"><i class="fas fa-envelope"></i></a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+      </div>
+
+      <div class="faculty-card">
+        <img src="sarkar.jpg" alt="Dr. Sankar Thappa">
+        <h3>Dr. Sankar Thappa</h3>
+        <h4>Associate Professor</h4>
+        <p>Specialization: Capital Market, Banking</p>
+        <div class="icon-list">
+          <a href="#"><i class="fas fa-phone"></i></a>
+          <a href="#"><i class="fas fa-envelope"></i></a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+      </div>
+
+      <div class="faculty-card">
+        <img src="arindam.jpg" alt="Dr. Arindam Garg">
+        <h3>Dr. Arindam Garg</h3>
+        <h4>Associate Professor</h4>
+        <p>Specialization: Human Resources</p>
+        <div class="icon-list">
+          <a href="#"><i class="fas fa-phone"></i></a>
+          <a href="#"><i class="fas fa-envelope"></i></a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+      </div>
+
+      <div class="faculty-card">
+        <img src="bhaskar.jpg" alt="Mr. Bhaskar Pratim Sarma Barua">
+        <h3>Mr. Bhaskar Pratim Sarma Barua</h3>
+        <h4>Assistant Professor</h4>
+        <p>Specialization: Accounting & Finance</p>
+        <div class="icon-list">
+          <a href="#"><i class="fas fa-phone"></i></a>
+          <a href="#"><i class="fas fa-envelope"></i></a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+      </div>
+
+      <div class="faculty-card">
+        <img src="arindam-ch.jpg" alt="Dr. Arindam Chakrabarty">
+        <h3>Dr. Arindam Chakrabarty</h3>
+        <h4>Assistant Professor</h4>
+        <p>Specialization: Marketing Management</p>
+        <div class="icon-list">
+          <a href="#"><i class="fas fa-phone"></i></a>
+          <a href="#"><i class="fas fa-envelope"></i></a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+      </div>
+
+      <div class="faculty-card">
+        <img src="odang.jpg" alt="Dr. Odang Mara">
+        <h3>Dr. Odang Mara</h3>
+        <h4>Assistant Professor</h4>
+        <p>Specialization: Accounting & Finance</p>
+        <div class="icon-list">
+          <a href="#"><i class="fas fa-phone"></i></a>
+          <a href="#"><i class="fas fa-envelope"></i></a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+      </div>
+
+      <!-- Add more faculty members below -->
+
+
+      <div class="faculty-card">
+        <img src="gautam.jpg" alt="Mr. Gautam Huidrom">
+        <h3>Mr. Gautam Huidrom</h3>
+        <h4>Assistant Professor</h4>
+        <p>Specialization: General Management</p>
+        <div class="icon-list">
+          <a href="#"><i class="fas fa-phone"></i></a>
+          <a href="#"><i class="fas fa-envelope"></i></a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+      </div>
+
+      <div class="faculty-card">
+        <img src="anil.jpg" alt="Dr. Anil Kumar Singh">
+        <h3>Dr. Anil Kumar Singh</h3>
+        <h4>Assistant Professor</h4>
+        <p>Specialization: General Management</p>
+        <div class="icon-list">
+          <a href="#"><i class="fas fa-phone"></i></a>
+          <a href="#"><i class="fas fa-envelope"></i></a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+      </div>
+
+      <div class="faculty-card">
+        <img src="abhishek.jpg" alt="Mr. Abhishek Prasad">
+        <h3>Mr. Abhishek Prasad</h3>
+        <h4>Assistant Professor</h4>
+        <p>Specialization: Marketing</p>
+        <div class="icon-list">
+          <a href="#"><i class="fas fa-phone"></i></a>
+          <a href="#"><i class="fas fa-envelope"></i></a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+        </div>
+      </div>
+
+
+
+    </div>
+
+ <!-- Footer Section -->
+ <footer>
+  <p style="margin-top: 20px;">© 2024 Rajiv Gandhi University. All rights reserved.</p>
+      <p style="color: white; margin-top: 10px;">Developed with ❤️ Nanu Kena</p>
+</footer>
+
+  </div>
+
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</body>
+</html>
